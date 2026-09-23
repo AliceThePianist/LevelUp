@@ -1,65 +1,33 @@
 <!DOCTYPE html>
-<!-- DOCTYPE selecciona el estándar HTML5 y evita que el navegador use el modo de compatibilidad antiguo. -->
 
-<!-- lang="es" declara el idioma principal para navegadores, lectores de pantalla y buscadores. -->
 <html lang="es">
 
-<!-- head agrupa metadatos y recursos que el navegador procesa antes de mostrar el contenido. -->
 <head>
 
-    <!-- charset="UTF-8" permite interpretar tildes, eñes y otros caracteres Unicode correctamente. -->
     <meta charset="UTF-8">
 
-    <!-- viewport iguala el ancho de la página al dispositivo y establece el zoom inicial en 1. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- title define el texto de la pestaña y el título utilizado por marcadores y buscadores. -->
     <title>Level-Up Gamer</title>
 
-    <!-- href carga Bootstrap 5.3.3 desde un CDN y rel="stylesheet" indica que el recurso es una hoja CSS. -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- href usa una ruta relativa hacia styles.css; al estar después de Bootstrap, sus reglas pueden sobrescribirlo. -->
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
-<!-- body contiene los nodos que el navegador incorpora al área visible del documento. -->
 <body>
 
-    <!-- header crea un punto de referencia semántico para el encabezado y facilita la navegación asistida. -->
     <header>
 
-        <!--
-        navbar: activa la estructura base del componente barra de navegación.
-        navbar-expand-lg: mantiene el menú colapsado antes de lg y lo despliega desde ese breakpoint.
-        navbar-dark: ajusta los colores internos para mantener contraste sobre un fondo oscuro.
-        bg-dark: aplica el color de fondo oscuro definido por Bootstrap.
-        -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-            <!--
-            container: centra el contenido, agrega padding horizontal y limita su ancho según el breakpoint.
-            -->
             <div class="container">
 
-                <!--
-                navbar-brand: aplica tamaño, espaciado y alineación al enlace de marca de la barra.
-                href: utiliza la ruta relativa index.html desde la ubicación de este archivo.
-                -->
                 <a class="navbar-brand" href="index.html">
                     LEVEL-UP GAMER
                 </a>
 
-                <!--
-                navbar-toggler: aplica el formato del botón que abre o cierra la navegación colapsada.
-                data-bs-toggle="collapse": activa el complemento Collapse de Bootstrap.
-                data-bs-target: conecta el botón con #menuPrincipal, que será el contenido desplegable.
-                aria-controls: informa a las tecnologías de asistencia que el botón controla menuPrincipal.
-                aria-expanded: declara que el contenido comienza en estado false y Bootstrap actualiza el valor.
-                aria-label: entrega el nombre accesible «Mostrar menú» cuando no basta el contenido visible.
-                type="button": evita que el botón intente enviar un formulario.
-                -->
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -69,98 +37,48 @@
                     aria-expanded="false"
                     aria-label="Mostrar menú">
 
-                    <!--
-                    navbar-toggler-icon: muestra el ícono del botón móvil utilizando los estilos de la navbar.
-                    -->
                     <span class="navbar-toggler-icon"></span>
 
                 </button>
 
-                <!--
-                collapse: permite que Bootstrap oculte y muestre el contenido mediante su componente Collapse.
-                navbar-collapse: adapta el contenido que se expande o contrae dentro de la barra de navegación.
-                id: asigna el identificador único menuPrincipal para que otro elemento pueda localizarlo.
-                -->
                 <div class="collapse navbar-collapse" id="menuPrincipal">
 
-                    <!--
-                    navbar-nav: elimina estilos de lista y organiza los enlaces como navegación de Bootstrap.
-                    me-auto: aplica margen automático al final y empuja los elementos siguientes hacia el extremo opuesto.
-                    mb-2: agrega un margen inferior de nivel 2.
-                    mb-lg-0: desde el breakpoint lg, elimina el margen inferior.
-                    -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                        <!--
-                        nav-item: aplica la estructura de Bootstrap para un elemento de la lista de navegación.
-                        -->
                         <li class="nav-item">
 
-                            <!--
-                            nav-link: aplica espaciado, color y estados interactivos a un enlace de navegación.
-                            active: marca visualmente el enlace correspondiente a la página actual.
-                            href: utiliza la ruta relativa index.html desde la ubicación de este archivo.
-                            -->
                             <a class="nav-link active" href="index.html">
                                 Inicio
                             </a>
 
                         </li>
 
-                        <!--
-                        nav-item: aplica la estructura de Bootstrap para un elemento de la lista de navegación.
-                        -->
                         <li class="nav-item">
 
-                            <!--
-                            nav-link: aplica espaciado, color y estados interactivos a un enlace de navegación.
-                            href: utiliza la ruta relativa productos.html desde la ubicación de este archivo.
-                            -->
                             <a class="nav-link" href="productos.html">
                                 Productos
                             </a>
 
                         </li>
 
-                        <!--
-                        nav-item: aplica la estructura de Bootstrap para un elemento de la lista de navegación.
-                        -->
                         <li class="nav-item">
 
-                            <!--
-                            nav-link: aplica espaciado, color y estados interactivos a un enlace de navegación.
-                            href: utiliza la ruta relativa nosotros.html desde la ubicación de este archivo.
-                            -->
                             <a class="nav-link" href="nosotros.html">
                                 Nosotros
                             </a>
 
                         </li>
 
-                        <!--
-                        nav-item: aplica la estructura de Bootstrap para un elemento de la lista de navegación.
-                        -->
                         <li class="nav-item">
 
-                            <!--
-                            nav-link: aplica espaciado, color y estados interactivos a un enlace de navegación.
-                            href: utiliza la ruta relativa blog.html desde la ubicación de este archivo.
-                            -->
                             <a class="nav-link" href="blog.html">
                                 Blog
                             </a>
 
                         </li>
 
-                        <!--
-                        nav-item: aplica la estructura de Bootstrap para un elemento de la lista de navegación.
-                        -->
                         <li class="nav-item">
 
-                            <!--
-                            nav-link: aplica espaciado, color y estados interactivos a un enlace de navegación.
-                            href: utiliza la ruta relativa contacto.html desde la ubicación de este archivo.
-                            -->
                             <a class="nav-link" href="contacto.html">
                                 Contacto
                             </a>
@@ -169,58 +87,26 @@
 
                     </ul>
 
-                    <!--
-                    d-flex: establece display: flex para distribuir sus elementos mediante Flexbox.
-                    me-lg-3: desde el breakpoint lg, agrega un margen de nivel 3 al final horizontal.
-                    -->
                     <div class="d-flex me-lg-3">
 
-                        <!--
-                        form-control: aplica el formato de Bootstrap para campos de formulario y ocupa el ancho disponible.
-                        me-2: agrega un margen de nivel 2 al final horizontal del elemento.
-                        aria-label: entrega el nombre accesible «Buscar productos» cuando no basta el contenido visible.
-                        type="search": identifica el campo como una entrada destinada a búsquedas.
-                        placeholder: muestra «Buscar productos» como ayuda temporal dentro del campo vacío.
-                        -->
                         <input
                             class="form-control me-2"
                             type="search"
                             placeholder="Buscar productos"
                             aria-label="Buscar productos">
 
-                        <!--
-                        btn: activa los estilos base de botón de Bootstrap sobre el elemento.
-                        btn-outline-primary: aplica un botón transparente con borde y texto del color primary.
-                        type="button": evita que el botón intente enviar un formulario.
-                        -->
                         <button class="btn btn-outline-primary" type="button">
                             Buscar
                         </button>
 
                     </div>
 
-                    <!--
-                    d-flex: establece display: flex para distribuir sus elementos mediante Flexbox.
-                    gap-2: agrega una separación de nivel 2 entre los botones.
-                    mt-2: agrega un margen superior de nivel 2 cuando el menú está colapsado.
-                    mt-lg-0: desde el breakpoint lg elimina el margen superior porque la navbar vuelve a mostrarse horizontalmente.
-                    -->
                     <div class="d-flex gap-2 mt-2 mt-lg-0">
 
-                        <!--
-                        btn: activa los estilos base de botón de Bootstrap sobre el elemento.
-                        btn-outline-light: aplica un botón transparente con borde y texto claros.
-                        href: utiliza la ruta relativa inicio-sesion.html desde la ubicación de este archivo.
-                        -->
                         <a class="btn btn-outline-light gap-2" href="inicio-sesion.html">
                             Ingresar
                         </a>
 
-                        <!--
-                        btn: activa los estilos base de botón de Bootstrap sobre el elemento.
-                        btn-success: aplica al botón el color verde de la paleta success.
-                        href: utiliza la ruta relativa carrito.html desde la ubicación de este archivo.
-                        -->
                         <a class="btn btn-success gap-2" href="carrito.html">
                             Carrito
                         </a>
@@ -235,81 +121,34 @@
 
     </header>
 
-    <!-- main identifica el contenido principal único y permite saltar directamente a él con tecnologías de asistencia. -->
     <main>
 
-        <!--
-        banner-principal: crea un selector propio para personalizar esta sección desde css/styles.css.
-        bg-dark: aplica el color de fondo oscuro definido por Bootstrap.
-        text-white: aplica color blanco al texto.
-        py-5: agrega padding vertical de nivel 5 arriba y abajo.
-        -->
         <section class="banner-principal bg-dark text-white py-5">
 
-            <!--
-            container: centra el contenido, agrega padding horizontal y limita su ancho según el breakpoint.
-            -->
             <div class="container">
 
-                <!--
-                row: crea una fila de la cuadrícula y prepara gutters para sus columnas hijas.
-                align-items-center: centra verticalmente los elementos de la fila sobre el eje transversal de Flexbox.
-                -->
                 <div class="row align-items-center">
 
-                    <!--
-                    col-lg-6: desde el breakpoint lg, ocupa 6 de 12 columnas y utiliza la mitad de la fila.
-                    mb-4: agrega un margen inferior de nivel 4.
-                    mb-lg-0: desde el breakpoint lg, elimina el margen inferior.
-                    -->
                     <div class="col-lg-6 mb-4 mb-lg-0">
 
-                        <!--
-                        text-success: aplica el color verde de la paleta success al texto.
-                        fw-bold: aplica un peso de fuente equivalente a negrita.
-                        -->
                         <p class="text-success fw-bold">
                             TIENDA GAMER EN CHILE
                         </p>
 
-                        <!--
-                        display-4: aplica un tamaño de encabezado grande de la escala display de Bootstrap.
-                        fw-bold: aplica un peso de fuente equivalente a negrita.
-                        -->
                         <h1 class="display-4 fw-bold">
                             Desafía tus límites con Level-Up Gamer
                         </h1>
 
-                        <!--
-                        lead: aumenta el tamaño del párrafo y reduce ligeramente su peso tipográfico.
-                        -->
                         <p class="lead">
                             Encuentra consolas, computadores, accesorios y productos para mejorar tu experiencia gamer.
                         </p>
 
-                        <!--
-                        d-flex: establece display: flex para distribuir sus elementos mediante Flexbox.
-                        flex-wrap: permite que los elementos flexibles bajen a otra línea cuando falta espacio.
-                        gap-2: agrega una separación de nivel 2 entre los elementos de un contenedor flex o grid.
-                        -->
                         <div class="d-flex flex-wrap gap-2">
 
-                            <!--
-                            btn: activa los estilos base de botón de Bootstrap sobre el elemento.
-                            btn-primary: aplica al botón el color principal de Bootstrap.
-                            btn-lg: aumenta el padding y el tamaño de fuente del botón.
-                            href: utiliza la ruta relativa productos.html desde la ubicación de este archivo.
-                            -->
                             <a class="btn btn-primary btn-lg" href="productos.html">
                                 Ver productos
                             </a>
 
-                            <!--
-                            btn: activa los estilos base de botón de Bootstrap sobre el elemento.
-                            btn-outline-success: aplica un botón transparente con borde y texto del color success.
-                            btn-lg: aumenta el padding y el tamaño de fuente del botón.
-                            href: utiliza la ruta relativa registro.html desde la ubicación de este archivo.
-                            -->
                             <a class="btn btn-outline-success btn-lg" href="registro.html">
                                 Crear cuenta
                             </a>
@@ -318,17 +157,8 @@
 
                     </div>
 
-                    <!--
-                    col-lg-6: desde el breakpoint lg, ocupa 6 de 12 columnas y utiliza la mitad de la fila.
-                    -->
                     <div class="col-lg-6">
 
-                        <!--
-                        img-fluid: aplica max-width: 100% y height: auto para que la imagen se adapte al ancho disponible sin deformarse.
-                        rounded: aplica el radio de borde estándar de Bootstrap y redondea las esquinas.
-                        src: utiliza una ruta relativa para localizar banner-gamer.jpg dentro de la carpeta img.
-                        alt: entrega una descripción textual de la imagen para accesibilidad y para cuando el archivo no pueda cargarse.
-                        -->
                         <img
                             class="img-fluid rounded"
                             src="img/banner-gamer.jpg"
@@ -342,42 +172,16 @@
 
         </section>
 
-        <!--
-        aviso-duoc: crea un selector propio para personalizar esta sección desde css/styles.css.
-        bg-success: aplica el color de fondo verde de la paleta success de Bootstrap.
-        text-dark: aplica el color oscuro de texto definido por Bootstrap.
-        py-3: agrega padding vertical de nivel 3 arriba y abajo.
-        -->
         <section class="aviso-duoc bg-success text-dark py-3">
 
-            <!--
-            container: centra el contenido, agrega padding horizontal y limita su ancho según el breakpoint.
-            -->
             <div class="container">
 
-                <!--
-                d-flex: establece display: flex para distribuir sus elementos mediante Flexbox.
-                flex-column: cambia el eje principal de Flexbox para ordenar los elementos verticalmente.
-                flex-md-row: desde el breakpoint md, cambia el eje principal de Flexbox a una fila horizontal.
-                justify-content-between: distribuye el espacio disponible entre el primer y el último elemento flexible.
-                align-items-center: centra verticalmente los elementos de la fila sobre el eje transversal de Flexbox.
-                gap-3: agrega una separación de nivel 3 entre los elementos de un contenedor flex o grid.
-                -->
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
 
-                    <!--
-                    mb-0: elimina el margen inferior mediante margin-bottom: 0.
-                    fw-bold: aplica un peso de fuente equivalente a negrita.
-                    -->
                     <p class="mb-0 fw-bold">
                         Regístrate con tu correo Duoc y obtén un 20% de descuento de por vida.
                     </p>
 
-                    <!--
-                    btn: activa los estilos base de botón de Bootstrap sobre el elemento.
-                    btn-dark: aplica al botón el color oscuro de Bootstrap.
-                    href: utiliza la ruta relativa registro.html desde la ubicación de este archivo.
-                    -->
                     <a class="btn btn-dark" href="registro.html">
                         Registrarme
                     </a>
@@ -388,91 +192,40 @@
 
         </section>
 
-        <!--
-        seccion-categorias: crea un selector propio para personalizar esta sección desde css/styles.css.
-        py-5: agrega padding vertical de nivel 5 arriba y abajo.
-        -->
         <section class="seccion-categorias py-5">
 
-            <!--
-            container: centra el contenido, agrega padding horizontal y limita su ancho según el breakpoint.
-            -->
             <div class="container">
 
-                <!--
-                text-center: centra horizontalmente el contenido de texto.
-                mb-4: agrega un margen inferior de nivel 4.
-                -->
                 <div class="text-center mb-4">
 
-                    <!--
-                    text-success: aplica el color verde de la paleta success al texto.
-                    fw-bold: aplica un peso de fuente equivalente a negrita.
-                    mb-2: agrega un margen inferior de nivel 2.
-                    -->
                     <p class="text-success fw-bold mb-2">
                         CATÁLOGO
                     </p>
 
-                    <!--
-                    fw-bold: aplica un peso de fuente equivalente a negrita.
-                    -->
                     <h2 class="fw-bold">
                         Categorías principales
                     </h2>
 
-                    <!--
-                    text-secondary: aplica el color secundario al texto.
-                    -->
                     <p class="text-secondary">
                         Explora nuestros productos y servicios para gamers.
                     </p>
 
                 </div>
 
-                <!--
-                row: crea una fila de la cuadrícula y prepara gutters para sus columnas hijas.
-                g-3: agrega un gutter de nivel 3 entre las filas y columnas de la cuadrícula.
-                -->
                 <div class="row g-3">
 
-                    <!--
-                    col-6: ocupa 6 de las 12 columnas de la cuadrícula y utiliza la mitad del ancho.
-                    col-md-4: desde el breakpoint md, ocupa 4 de 12 columnas y permite tres elementos por fila.
-                    col-lg-3: desde el breakpoint lg, ocupa 3 de 12 columnas y permite cuatro elementos por fila.
-                    -->
                     <div class="col-6 col-md-4 col-lg-3">
 
-                        <!--
-                        text-decoration-none: elimina la decoración del enlace, incluido el subrayado.
-                        href: utiliza la ruta relativa productos.html desde la ubicación de este archivo.
-                        -->
                         <a class="text-decoration-none" href="productos.html">
 
-                            <!--
-                            card: activa la estructura y los estilos base del componente tarjeta.
-                            tarjeta-categoria: crea un selector propio para personalizar esta tarjeta desde css/styles.css.
-                            h-100: asigna height: 100% para ocupar toda la altura disponible en el elemento padre.
-                            -->
                             <article class="card tarjeta-categoria h-100">
 
-                                <!--
-                                card-body: agrega el padding interno correspondiente al cuerpo de una tarjeta.
-                                -->
                                 <div class="card-body">
 
-                                    <!--
-                                    card-title: aplica los márgenes preparados para el título de una tarjeta.
-                                    h5: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h5.
-                                    -->
                                     <h3 class="card-title h5">
                                         Juegos de Mesa
                                     </h3>
 
-                                    <!--
-                                    card-text: aplica los márgenes preparados para un texto dentro de una tarjeta.
-                                    text-secondary: aplica el color secundario al texto.
-                                    -->
                                     <p class="card-text text-secondary">
                                         Juegos para compartir con amigos y familia.
                                     </p>
@@ -485,43 +238,18 @@
 
                     </div>
 
-                    <!--
-                    col-6: ocupa 6 de las 12 columnas de la cuadrícula y utiliza la mitad del ancho.
-                    col-md-4: desde el breakpoint md, ocupa 4 de 12 columnas y permite tres elementos por fila.
-                    col-lg-3: desde el breakpoint lg, ocupa 3 de 12 columnas y permite cuatro elementos por fila.
-                    -->
                     <div class="col-6 col-md-4 col-lg-3">
 
-                        <!--
-                        text-decoration-none: elimina la decoración del enlace, incluido el subrayado.
-                        href: utiliza la ruta relativa productos.html desde la ubicación de este archivo.
-                        -->
                         <a class="text-decoration-none" href="productos.html">
 
-                            <!--
-                            card: activa la estructura y los estilos base del componente tarjeta.
-                            tarjeta-categoria: crea un selector propio para personalizar esta tarjeta desde css/styles.css.
-                            h-100: asigna height: 100% para ocupar toda la altura disponible en el elemento padre.
-                            -->
                             <article class="card tarjeta-categoria h-100">
 
-                                <!--
-                                card-body: agrega el padding interno correspondiente al cuerpo de una tarjeta.
-                                -->
                                 <div class="card-body">
 
-                                    <!--
-                                    card-title: aplica los márgenes preparados para el título de una tarjeta.
-                                    h5: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h5.
-                                    -->
                                     <h3 class="card-title h5">
                                         Accesorios
                                     </h3>
 
-                                    <!--
-                                    card-text: aplica los márgenes preparados para un texto dentro de una tarjeta.
-                                    text-secondary: aplica el color secundario al texto.
-                                    -->
                                     <p class="card-text text-secondary">
                                         Audífonos, controles y accesorios gamer.
                                     </p>
@@ -534,43 +262,18 @@
 
                     </div>
 
-                    <!--
-                    col-6: ocupa 6 de las 12 columnas de la cuadrícula y utiliza la mitad del ancho.
-                    col-md-4: desde el breakpoint md, ocupa 4 de 12 columnas y permite tres elementos por fila.
-                    col-lg-3: desde el breakpoint lg, ocupa 3 de 12 columnas y permite cuatro elementos por fila.
-                    -->
                     <div class="col-6 col-md-4 col-lg-3">
 
-                        <!--
-                        text-decoration-none: elimina la decoración del enlace, incluido el subrayado.
-                        href: utiliza la ruta relativa productos.html desde la ubicación de este archivo.
-                        -->
                         <a class="text-decoration-none" href="productos.html">
 
-                            <!--
-                            card: activa la estructura y los estilos base del componente tarjeta.
-                            tarjeta-categoria: crea un selector propio para personalizar esta tarjeta desde css/styles.css.
-                            h-100: asigna height: 100% para ocupar toda la altura disponible en el elemento padre.
-                            -->
                             <article class="card tarjeta-categoria h-100">
 
-                                <!--
-                                card-body: agrega el padding interno correspondiente al cuerpo de una tarjeta.
-                                -->
                                 <div class="card-body">
 
-                                    <!--
-                                    card-title: aplica los márgenes preparados para el título de una tarjeta.
-                                    h5: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h5.
-                                    -->
                                     <h3 class="card-title h5">
                                         Consolas
                                     </h3>
 
-                                    <!--
-                                    card-text: aplica los márgenes preparados para un texto dentro de una tarjeta.
-                                    text-secondary: aplica el color secundario al texto.
-                                    -->
                                     <p class="card-text text-secondary">
                                         Consolas para disfrutar tus juegos favoritos.
                                     </p>
@@ -583,43 +286,18 @@
 
                     </div>
 
-                    <!--
-                    col-6: ocupa 6 de las 12 columnas de la cuadrícula y utiliza la mitad del ancho.
-                    col-md-4: desde el breakpoint md, ocupa 4 de 12 columnas y permite tres elementos por fila.
-                    col-lg-3: desde el breakpoint lg, ocupa 3 de 12 columnas y permite cuatro elementos por fila.
-                    -->
                     <div class="col-6 col-md-4 col-lg-3">
 
-                        <!--
-                        text-decoration-none: elimina la decoración del enlace, incluido el subrayado.
-                        href: utiliza la ruta relativa productos.html desde la ubicación de este archivo.
-                        -->
                         <a class="text-decoration-none" href="productos.html">
 
-                            <!--
-                            card: activa la estructura y los estilos base del componente tarjeta.
-                            tarjeta-categoria: crea un selector propio para personalizar esta tarjeta desde css/styles.css.
-                            h-100: asigna height: 100% para ocupar toda la altura disponible en el elemento padre.
-                            -->
                             <article class="card tarjeta-categoria h-100">
 
-                                <!--
-                                card-body: agrega el padding interno correspondiente al cuerpo de una tarjeta.
-                                -->
                                 <div class="card-body">
 
-                                    <!--
-                                    card-title: aplica los márgenes preparados para el título de una tarjeta.
-                                    h5: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h5.
-                                    -->
                                     <h3 class="card-title h5">
                                         Computadores Gamers
                                     </h3>
 
-                                    <!--
-                                    card-text: aplica los márgenes preparados para un texto dentro de una tarjeta.
-                                    text-secondary: aplica el color secundario al texto.
-                                    -->
                                     <p class="card-text text-secondary">
                                         Equipos preparados para jugar.
                                     </p>
@@ -632,43 +310,18 @@
 
                     </div>
 
-                    <!--
-                    col-6: ocupa 6 de las 12 columnas de la cuadrícula y utiliza la mitad del ancho.
-                    col-md-4: desde el breakpoint md, ocupa 4 de 12 columnas y permite tres elementos por fila.
-                    col-lg-3: desde el breakpoint lg, ocupa 3 de 12 columnas y permite cuatro elementos por fila.
-                    -->
                     <div class="col-6 col-md-4 col-lg-3">
 
-                        <!--
-                        text-decoration-none: elimina la decoración del enlace, incluido el subrayado.
-                        href: utiliza la ruta relativa productos.html desde la ubicación de este archivo.
-                        -->
                         <a class="text-decoration-none" href="productos.html">
 
-                            <!--
-                            card: activa la estructura y los estilos base del componente tarjeta.
-                            tarjeta-categoria: crea un selector propio para personalizar esta tarjeta desde css/styles.css.
-                            h-100: asigna height: 100% para ocupar toda la altura disponible en el elemento padre.
-                            -->
                             <article class="card tarjeta-categoria h-100">
 
-                                <!--
-                                card-body: agrega el padding interno correspondiente al cuerpo de una tarjeta.
-                                -->
                                 <div class="card-body">
 
-                                    <!--
-                                    card-title: aplica los márgenes preparados para el título de una tarjeta.
-                                    h5: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h5.
-                                    -->
                                     <h3 class="card-title h5">
                                         Sillas Gamers
                                     </h3>
 
-                                    <!--
-                                    card-text: aplica los márgenes preparados para un texto dentro de una tarjeta.
-                                    text-secondary: aplica el color secundario al texto.
-                                    -->
                                     <p class="card-text text-secondary">
                                         Comodidad para largas sesiones de juego.
                                     </p>
@@ -681,43 +334,18 @@
 
                     </div>
 
-                    <!--
-                    col-6: ocupa 6 de las 12 columnas de la cuadrícula y utiliza la mitad del ancho.
-                    col-md-4: desde el breakpoint md, ocupa 4 de 12 columnas y permite tres elementos por fila.
-                    col-lg-3: desde el breakpoint lg, ocupa 3 de 12 columnas y permite cuatro elementos por fila.
-                    -->
                     <div class="col-6 col-md-4 col-lg-3">
 
-                        <!--
-                        text-decoration-none: elimina la decoración del enlace, incluido el subrayado.
-                        href: utiliza la ruta relativa productos.html desde la ubicación de este archivo.
-                        -->
                         <a class="text-decoration-none" href="productos.html">
 
-                            <!--
-                            card: activa la estructura y los estilos base del componente tarjeta.
-                            tarjeta-categoria: crea un selector propio para personalizar esta tarjeta desde css/styles.css.
-                            h-100: asigna height: 100% para ocupar toda la altura disponible en el elemento padre.
-                            -->
                             <article class="card tarjeta-categoria h-100">
 
-                                <!--
-                                card-body: agrega el padding interno correspondiente al cuerpo de una tarjeta.
-                                -->
                                 <div class="card-body">
 
-                                    <!--
-                                    card-title: aplica los márgenes preparados para el título de una tarjeta.
-                                    h5: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h5.
-                                    -->
                                     <h3 class="card-title h5">
                                         Mouse
                                     </h3>
 
-                                    <!--
-                                    card-text: aplica los márgenes preparados para un texto dentro de una tarjeta.
-                                    text-secondary: aplica el color secundario al texto.
-                                    -->
                                     <p class="card-text text-secondary">
                                         Precisión y control para cada partida.
                                     </p>
@@ -730,43 +358,18 @@
 
                     </div>
 
-                    <!--
-                    col-6: ocupa 6 de las 12 columnas de la cuadrícula y utiliza la mitad del ancho.
-                    col-md-4: desde el breakpoint md, ocupa 4 de 12 columnas y permite tres elementos por fila.
-                    col-lg-3: desde el breakpoint lg, ocupa 3 de 12 columnas y permite cuatro elementos por fila.
-                    -->
                     <div class="col-6 col-md-4 col-lg-3">
 
-                        <!--
-                        text-decoration-none: elimina la decoración del enlace, incluido el subrayado.
-                        href: utiliza la ruta relativa productos.html desde la ubicación de este archivo.
-                        -->
                         <a class="text-decoration-none" href="productos.html">
 
-                            <!--
-                            card: activa la estructura y los estilos base del componente tarjeta.
-                            tarjeta-categoria: crea un selector propio para personalizar esta tarjeta desde css/styles.css.
-                            h-100: asigna height: 100% para ocupar toda la altura disponible en el elemento padre.
-                            -->
                             <article class="card tarjeta-categoria h-100">
 
-                                <!--
-                                card-body: agrega el padding interno correspondiente al cuerpo de una tarjeta.
-                                -->
                                 <div class="card-body">
 
-                                    <!--
-                                    card-title: aplica los márgenes preparados para el título de una tarjeta.
-                                    h5: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h5.
-                                    -->
                                     <h3 class="card-title h5">
                                         Mousepad
                                     </h3>
 
-                                    <!--
-                                    card-text: aplica los márgenes preparados para un texto dentro de una tarjeta.
-                                    text-secondary: aplica el color secundario al texto.
-                                    -->
                                     <p class="card-text text-secondary">
                                         Superficies para mejorar el movimiento.
                                     </p>
@@ -779,43 +382,18 @@
 
                     </div>
 
-                    <!--
-                    col-6: ocupa 6 de las 12 columnas de la cuadrícula y utiliza la mitad del ancho.
-                    col-md-4: desde el breakpoint md, ocupa 4 de 12 columnas y permite tres elementos por fila.
-                    col-lg-3: desde el breakpoint lg, ocupa 3 de 12 columnas y permite cuatro elementos por fila.
-                    -->
                     <div class="col-6 col-md-4 col-lg-3">
 
-                        <!--
-                        text-decoration-none: elimina la decoración del enlace, incluido el subrayado.
-                        href: utiliza la ruta relativa productos.html desde la ubicación de este archivo.
-                        -->
                         <a class="text-decoration-none" href="productos.html">
 
-                            <!--
-                            card: activa la estructura y los estilos base del componente tarjeta.
-                            tarjeta-categoria: crea un selector propio para personalizar esta tarjeta desde css/styles.css.
-                            h-100: asigna height: 100% para ocupar toda la altura disponible en el elemento padre.
-                            -->
                             <article class="card tarjeta-categoria h-100">
 
-                                <!--
-                                card-body: agrega el padding interno correspondiente al cuerpo de una tarjeta.
-                                -->
                                 <div class="card-body">
 
-                                    <!--
-                                    card-title: aplica los márgenes preparados para el título de una tarjeta.
-                                    h5: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h5.
-                                    -->
                                     <h3 class="card-title h5">
                                         Poleras Personalizadas
                                     </h3>
 
-                                    <!--
-                                    card-text: aplica los márgenes preparados para un texto dentro de una tarjeta.
-                                    text-secondary: aplica el color secundario al texto.
-                                    -->
                                     <p class="card-text text-secondary">
                                         Diseños personalizados para gamers.
                                     </p>
@@ -828,43 +406,18 @@
 
                     </div>
 
-                    <!--
-                    col-6: ocupa 6 de las 12 columnas de la cuadrícula y utiliza la mitad del ancho.
-                    col-md-4: desde el breakpoint md, ocupa 4 de 12 columnas y permite tres elementos por fila.
-                    col-lg-3: desde el breakpoint lg, ocupa 3 de 12 columnas y permite cuatro elementos por fila.
-                    -->
                     <div class="col-6 col-md-4 col-lg-3">
 
-                        <!--
-                        text-decoration-none: elimina la decoración del enlace, incluido el subrayado.
-                        href: utiliza la ruta relativa productos.html desde la ubicación de este archivo.
-                        -->
                         <a class="text-decoration-none" href="productos.html">
 
-                            <!--
-                            card: activa la estructura y los estilos base del componente tarjeta.
-                            tarjeta-categoria: crea un selector propio para personalizar esta tarjeta desde css/styles.css.
-                            h-100: asigna height: 100% para ocupar toda la altura disponible en el elemento padre.
-                            -->
                             <article class="card tarjeta-categoria h-100">
 
-                                <!--
-                                card-body: agrega el padding interno correspondiente al cuerpo de una tarjeta.
-                                -->
                                 <div class="card-body">
 
-                                    <!--
-                                    card-title: aplica los márgenes preparados para el título de una tarjeta.
-                                    h5: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h5.
-                                    -->
                                     <h3 class="card-title h5">
                                         Polerones Gamers
                                     </h3>
 
-                                    <!--
-                                    card-text: aplica los márgenes preparados para un texto dentro de una tarjeta.
-                                    text-secondary: aplica el color secundario al texto.
-                                    -->
                                     <p class="card-text text-secondary">
                                         Polerones personalizados con tu diseño.
                                     </p>
@@ -877,43 +430,18 @@
 
                     </div>
 
-                    <!--
-                    col-6: ocupa 6 de las 12 columnas de la cuadrícula y utiliza la mitad del ancho.
-                    col-md-4: desde el breakpoint md, ocupa 4 de 12 columnas y permite tres elementos por fila.
-                    col-lg-3: desde el breakpoint lg, ocupa 3 de 12 columnas y permite cuatro elementos por fila.
-                    -->
                     <div class="col-6 col-md-4 col-lg-3">
 
-                        <!--
-                        text-decoration-none: elimina la decoración del enlace, incluido el subrayado.
-                        href: utiliza la ruta relativa productos.html desde la ubicación de este archivo.
-                        -->
                         <a class="text-decoration-none" href="productos.html">
 
-                            <!--
-                            card: activa la estructura y los estilos base del componente tarjeta.
-                            tarjeta-categoria: crea un selector propio para personalizar esta tarjeta desde css/styles.css.
-                            h-100: asigna height: 100% para ocupar toda la altura disponible en el elemento padre.
-                            -->
                             <article class="card tarjeta-categoria h-100">
 
-                                <!--
-                                card-body: agrega el padding interno correspondiente al cuerpo de una tarjeta.
-                                -->
                                 <div class="card-body">
 
-                                    <!--
-                                    card-title: aplica los márgenes preparados para el título de una tarjeta.
-                                    h5: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h5.
-                                    -->
                                     <h3 class="card-title h5">
                                         Servicio Técnico
                                     </h3>
 
-                                    <!--
-                                    card-text: aplica los márgenes preparados para un texto dentro de una tarjeta.
-                                    text-secondary: aplica el color secundario al texto.
-                                    -->
                                     <p class="card-text text-secondary">
                                         Ayuda y soporte para tus equipos.
                                     </p>
@@ -932,139 +460,59 @@
 
         </section>
 
-        <!--
-        productos-destacados: crea un selector propio para personalizar esta sección desde css/styles.css.
-        bg-light: aplica el color de fondo claro definido por Bootstrap.
-        py-5: agrega padding vertical de nivel 5 arriba y abajo.
-        -->
         <section class="productos-destacados bg-light py-5">
 
-            <!--
-            container: centra el contenido, agrega padding horizontal y limita su ancho según el breakpoint.
-            -->
             <div class="container">
 
-                <!--
-                d-flex: establece display: flex para distribuir sus elementos mediante Flexbox.
-                justify-content-between: distribuye el espacio disponible entre el primer y el último elemento flexible.
-                align-items-center: centra verticalmente los elementos de la fila sobre el eje transversal de Flexbox.
-                mb-4: agrega un margen inferior de nivel 4.
-                -->
                 <div class="d-flex justify-content-between align-items-center mb-4">
 
-                    <!-- div crea un contenedor genérico; sin clases ni CSS no modifica por sí solo la presentación. -->
                     <div>
 
-                        <!--
-                        text-success: aplica el color verde de la paleta success al texto.
-                        fw-bold: aplica un peso de fuente equivalente a negrita.
-                        mb-2: agrega un margen inferior de nivel 2.
-                        -->
                         <p class="text-success fw-bold mb-2">
                             LO MÁS BUSCADO
                         </p>
 
-                        <!--
-                        fw-bold: aplica un peso de fuente equivalente a negrita.
-                        mb-0: elimina el margen inferior mediante margin-bottom: 0.
-                        -->
                         <h2 class="fw-bold mb-0">
                             Productos destacados
                         </h2>
 
                     </div>
 
-                    <!--
-                    btn: activa los estilos base de botón de Bootstrap sobre el elemento.
-                    btn-outline-primary: aplica un botón transparente con borde y texto del color primary.
-                    href: utiliza la ruta relativa productos.html desde la ubicación de este archivo.
-                    -->
                     <a class="btn btn-outline-primary" href="productos.html">
                         Ver todos
                     </a>
 
                 </div>
 
-                <!--
-                row: crea una fila de la cuadrícula y prepara gutters para sus columnas hijas.
-                g-4: agrega un gutter de nivel 4 entre las filas y columnas de la cuadrícula.
-                -->
                 <div class="row g-4">
 
-                    <!--
-                    col-12: ocupa las 12 columnas de la cuadrícula y, por lo tanto, todo el ancho de la fila.
-                    col-sm-6: desde el breakpoint sm, ocupa 6 de 12 columnas y permite dos elementos por fila.
-                    col-lg-3: desde el breakpoint lg, ocupa 3 de 12 columnas y permite cuatro elementos por fila.
-                    -->
                     <div class="col-12 col-sm-6 col-lg-3">
 
-                        <!--
-                        card: activa la estructura y los estilos base del componente tarjeta.
-                        h-100: asigna height: 100% para ocupar toda la altura disponible en el elemento padre.
-                        shadow-sm: aplica una sombra exterior pequeña.
-                        -->
                         <article class="card h-100 shadow-sm">
 
-                            <!--
-                            card-img-top: adapta la imagen a la parte superior de una tarjeta de Bootstrap y redondea sus esquinas superiores.
-                            imagen-producto: crea un selector propio para poder personalizar posteriormente todas las imágenes de productos desde styles.css.
-                            img-fluid: aplica max-width: 100% y height: auto para adaptar la imagen al ancho disponible sin deformarla.
-                            src: utiliza una ruta relativa para localizar catan.jpg dentro de la carpeta img.
-                            alt: proporciona una descripción textual de la imagen para accesibilidad y para cuando el archivo no pueda cargarse.
-                            -->
                             <img
                                 class="card-img-top imagen-producto img-fluid"
                                 src="img/catan.jpg"
                                 alt="Juego de mesa Catan con tablero, fichas y cartas">
 
-                            <!--
-                            card-body: agrega el padding interno correspondiente al cuerpo de una tarjeta.
-                            d-flex: establece display: flex para distribuir sus elementos mediante Flexbox.
-                            flex-column: cambia el eje principal de Flexbox para ordenar los elementos verticalmente.
-                            -->
                             <div class="card-body d-flex flex-column">
 
-                                <!--
-                                text-success: aplica el color verde de la paleta success al texto.
-                                fw-bold: aplica un peso de fuente equivalente a negrita.
-                                small: reduce el tamaño de fuente al valor small definido por Bootstrap.
-                                mb-2: agrega un margen inferior de nivel 2.
-                                -->
                                 <p class="text-success fw-bold small mb-2">
                                     Juegos de Mesa
                                 </p>
 
-                                <!--
-                                card-title: aplica los márgenes preparados para el título de una tarjeta.
-                                h5: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h5.
-                                -->
                                 <h3 class="card-title h5">
                                     Catan
                                 </h3>
 
-                                <!--
-                                card-text: aplica los márgenes preparados para un texto dentro de una tarjeta.
-                                text-secondary: aplica el color secundario al texto.
-                                -->
                                 <p class="card-text text-secondary">
                                     Juego de estrategia ideal para compartir con amigos.
                                 </p>
 
-                                <!--
-                                h4: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h4.
-                                text-primary: aplica el color principal al texto.
-                                mt-auto: aplica margen superior automático y empuja el elemento hacia el final de una columna flexible.
-                                -->
                                 <p class="h4 text-primary mt-auto">
                                     $29.990 CLP
                                 </p>
 
-                                <!--
-                                btn: activa los estilos base de botón de Bootstrap sobre el elemento.
-                                btn-success: aplica al botón el color verde de la paleta success.
-                                w-100: asigna width: 100% para ocupar todo el ancho disponible.
-                                href: utiliza la ruta relativa detalle-producto.html desde la ubicación de este archivo.
-                                -->
                                 <a class="btn btn-success w-100" href="detalle-producto.html">
                                     Ver producto
                                 </a>
@@ -1075,80 +523,33 @@
 
                     </div>
 
-                    <!--
-                    col-12: ocupa las 12 columnas de la cuadrícula y, por lo tanto, todo el ancho de la fila.
-                    col-sm-6: desde el breakpoint sm, ocupa 6 de 12 columnas y permite dos elementos por fila.
-                    col-lg-3: desde el breakpoint lg, ocupa 3 de 12 columnas y permite cuatro elementos por fila.
-                    -->
                     <div class="col-12 col-sm-6 col-lg-3">
 
-                        <!--
-                        card: activa la estructura y los estilos base del componente tarjeta.
-                        h-100: asigna height: 100% para ocupar toda la altura disponible en el elemento padre.
-                        shadow-sm: aplica una sombra exterior pequeña.
-                        -->
                         <article class="card h-100 shadow-sm">
 
-                            <!--
-                            card-img-top: adapta la imagen a la parte superior de una tarjeta de Bootstrap y redondea sus esquinas superiores.
-                            imagen-producto: crea un selector propio para poder personalizar posteriormente todas las imágenes de productos desde styles.css.
-                            img-fluid: aplica max-width: 100% y height: auto para adaptar la imagen al ancho disponible sin deformarla.
-                            src: utiliza una ruta relativa para localizar controlador-xbox.jpg dentro de la carpeta img.
-                            alt: proporciona una descripción textual de la imagen para accesibilidad y para cuando el archivo no pueda cargarse.
-                            -->
                             <img
                                 class="card-img-top imagen-producto img-fluid"
                                 src="img/controlador-xbox.jpg"
                                 alt="Controlador inalámbrico negro con iluminación azul y verde">
 
-                            <!--
-                            card-body: agrega el padding interno correspondiente al cuerpo de una tarjeta.
-                            d-flex: establece display: flex para distribuir sus elementos mediante Flexbox.
-                            flex-column: cambia el eje principal de Flexbox para ordenar los elementos verticalmente.
-                            -->
                             <div class="card-body d-flex flex-column">
 
-                                <!--
-                                text-success: aplica el color verde de la paleta success al texto.
-                                fw-bold: aplica un peso de fuente equivalente a negrita.
-                                small: reduce el tamaño de fuente al valor small definido por Bootstrap.
-                                mb-2: agrega un margen inferior de nivel 2.
-                                -->
                                 <p class="text-success fw-bold small mb-2">
                                     Accesorios
                                 </p>
 
-                                <!--
-                                card-title: aplica los márgenes preparados para el título de una tarjeta.
-                                h5: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h5.
-                                -->
                                 <h3 class="card-title h5">
                                     Controlador Inalámbrico Xbox Series X
                                 </h3>
 
-                                <!--
-                                card-text: aplica los márgenes preparados para un texto dentro de una tarjeta.
-                                text-secondary: aplica el color secundario al texto.
-                                -->
                                 <p class="card-text text-secondary">
                                     Control inalámbrico compatible con consolas Xbox y computadores.
                                 </p>
 
-                                <!--
-                                h4: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h4.
-                                text-primary: aplica el color principal al texto.
-                                mt-auto: aplica margen superior automático y empuja el elemento hacia el final de una columna flexible.
-                                -->
                                 <p class="h4 text-primary mt-auto">
                                     $59.990 CLP
                                 </p>
 
-                                <!--
-                                btn: activa los estilos base de botón de Bootstrap sobre el elemento.
-                                btn-success: aplica al botón el color verde de la paleta success.
-                                w-100: asigna width: 100% para ocupar todo el ancho disponible.
-                                href: utiliza la ruta relativa detalle-producto.html desde la ubicación de este archivo.
-                                -->
                                 <a class="btn btn-success w-100" href="detalle-producto.html">
                                     Ver producto
                                 </a>
@@ -1159,80 +560,33 @@
 
                     </div>
 
-                    <!--
-                    col-12: ocupa las 12 columnas de la cuadrícula y, por lo tanto, todo el ancho de la fila.
-                    col-sm-6: desde el breakpoint sm, ocupa 6 de 12 columnas y permite dos elementos por fila.
-                    col-lg-3: desde el breakpoint lg, ocupa 3 de 12 columnas y permite cuatro elementos por fila.
-                    -->
                     <div class="col-12 col-sm-6 col-lg-3">
 
-                        <!--
-                        card: activa la estructura y los estilos base del componente tarjeta.
-                        h-100: asigna height: 100% para ocupar toda la altura disponible en el elemento padre.
-                        shadow-sm: aplica una sombra exterior pequeña.
-                        -->
                         <article class="card h-100 shadow-sm">
 
-                            <!--
-                            card-img-top: adapta la imagen a la parte superior de una tarjeta de Bootstrap y redondea sus esquinas superiores.
-                            imagen-producto: crea un selector propio para poder personalizar posteriormente todas las imágenes de productos desde styles.css.
-                            img-fluid: aplica max-width: 100% y height: auto para adaptar la imagen al ancho disponible sin deformarla.
-                            src: utiliza una ruta relativa para localizar playstation-5.jpg dentro de la carpeta img.
-                            alt: proporciona una descripción textual de la imagen para accesibilidad y para cuando el archivo no pueda cargarse.
-                            -->
                             <img
                                 class="card-img-top imagen-producto img-fluid"
                                 src="img/playstation-5.jpg"
                                 alt="Consola PlayStation 5 blanca junto a su controlador">
 
-                            <!--
-                            card-body: agrega el padding interno correspondiente al cuerpo de una tarjeta.
-                            d-flex: establece display: flex para distribuir sus elementos mediante Flexbox.
-                            flex-column: cambia el eje principal de Flexbox para ordenar los elementos verticalmente.
-                            -->
                             <div class="card-body d-flex flex-column">
 
-                                <!--
-                                text-success: aplica el color verde de la paleta success al texto.
-                                fw-bold: aplica un peso de fuente equivalente a negrita.
-                                small: reduce el tamaño de fuente al valor small definido por Bootstrap.
-                                mb-2: agrega un margen inferior de nivel 2.
-                                -->
                                 <p class="text-success fw-bold small mb-2">
                                     Consolas
                                 </p>
 
-                                <!--
-                                card-title: aplica los márgenes preparados para el título de una tarjeta.
-                                h5: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h5.
-                                -->
                                 <h3 class="card-title h5">
                                     PlayStation 5
                                 </h3>
 
-                                <!--
-                                card-text: aplica los márgenes preparados para un texto dentro de una tarjeta.
-                                text-secondary: aplica el color secundario al texto.
-                                -->
                                 <p class="card-text text-secondary">
                                     Consola de última generación con gráficos de alta calidad.
                                 </p>
 
-                                <!--
-                                h4: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h4.
-                                text-primary: aplica el color principal al texto.
-                                mt-auto: aplica margen superior automático y empuja el elemento hacia el final de una columna flexible.
-                                -->
                                 <p class="h4 text-primary mt-auto">
                                     $549.990 CLP
                                 </p>
 
-                                <!--
-                                btn: activa los estilos base de botón de Bootstrap sobre el elemento.
-                                btn-success: aplica al botón el color verde de la paleta success.
-                                w-100: asigna width: 100% para ocupar todo el ancho disponible.
-                                href: utiliza la ruta relativa detalle-producto.html desde la ubicación de este archivo.
-                                -->
                                 <a class="btn btn-success w-100" href="detalle-producto.html">
                                     Ver producto
                                 </a>
@@ -1243,80 +597,33 @@
 
                     </div>
 
-                    <!--
-                    col-12: ocupa las 12 columnas de la cuadrícula y, por lo tanto, todo el ancho de la fila.
-                    col-sm-6: desde el breakpoint sm, ocupa 6 de 12 columnas y permite dos elementos por fila.
-                    col-lg-3: desde el breakpoint lg, ocupa 3 de 12 columnas y permite cuatro elementos por fila.
-                    -->
                     <div class="col-12 col-sm-6 col-lg-3">
 
-                        <!--
-                        card: activa la estructura y los estilos base del componente tarjeta.
-                        h-100: asigna height: 100% para ocupar toda la altura disponible en el elemento padre.
-                        shadow-sm: aplica una sombra exterior pequeña.
-                        -->
                         <article class="card h-100 shadow-sm">
 
-                            <!--
-                            card-img-top: adapta la imagen a la parte superior de una tarjeta de Bootstrap y redondea sus esquinas superiores.
-                            imagen-producto: crea un selector propio para poder personalizar posteriormente todas las imágenes de productos desde styles.css.
-                            img-fluid: aplica max-width: 100% y height: auto para adaptar la imagen al ancho disponible sin deformarla.
-                            src: utiliza una ruta relativa para localizar computador-gamer.jpg dentro de la carpeta img.
-                            alt: proporciona una descripción textual de la imagen para accesibilidad y para cuando el archivo no pueda cargarse.
-                            -->
                             <img
                                 class="card-img-top imagen-producto img-fluid"
                                 src="img/computador-gamer.jpg"
                                 alt="Computador gamer con gabinete negro e iluminación azul y verde">
 
-                            <!--
-                            card-body: agrega el padding interno correspondiente al cuerpo de una tarjeta.
-                            d-flex: establece display: flex para distribuir sus elementos mediante Flexbox.
-                            flex-column: cambia el eje principal de Flexbox para ordenar los elementos verticalmente.
-                            -->
                             <div class="card-body d-flex flex-column">
 
-                                <!--
-                                text-success: aplica el color verde de la paleta success al texto.
-                                fw-bold: aplica un peso de fuente equivalente a negrita.
-                                small: reduce el tamaño de fuente al valor small definido por Bootstrap.
-                                mb-2: agrega un margen inferior de nivel 2.
-                                -->
                                 <p class="text-success fw-bold small mb-2">
                                     Computadores Gamers
                                 </p>
 
-                                <!--
-                                card-title: aplica los márgenes preparados para el título de una tarjeta.
-                                h5: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h5.
-                                -->
                                 <h3 class="card-title h5">
                                     PC Gamer ASUS ROG Strix
                                 </h3>
 
-                                <!--
-                                card-text: aplica los márgenes preparados para un texto dentro de una tarjeta.
-                                text-secondary: aplica el color secundario al texto.
-                                -->
                                 <p class="card-text text-secondary">
                                     Equipo de alto rendimiento para los jugadores más exigentes.
                                 </p>
 
-                                <!--
-                                h4: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h4.
-                                text-primary: aplica el color principal al texto.
-                                mt-auto: aplica margen superior automático y empuja el elemento hacia el final de una columna flexible.
-                                -->
                                 <p class="h4 text-primary mt-auto">
                                     $1.299.990 CLP
                                 </p>
 
-                                <!--
-                                btn: activa los estilos base de botón de Bootstrap sobre el elemento.
-                                btn-success: aplica al botón el color verde de la paleta success.
-                                w-100: asigna width: 100% para ocupar todo el ancho disponible.
-                                href: utiliza la ruta relativa detalle-producto.html desde la ubicación de este archivo.
-                                -->
                                 <a class="btn btn-success w-100" href="detalle-producto.html">
                                     Ver producto
                                 </a>
@@ -1333,87 +640,38 @@
 
         </section>
 
-        <!--
-        programa-levelup: crea un selector propio para personalizar esta sección desde css/styles.css.
-        bg-dark: aplica el color de fondo oscuro definido por Bootstrap.
-        text-white: aplica color blanco al texto.
-        py-5: agrega padding vertical de nivel 5 arriba y abajo.
-        -->
         <section class="programa-levelup bg-dark text-white py-5">
 
-            <!--
-            container: centra el contenido, agrega padding horizontal y limita su ancho según el breakpoint.
-            -->
             <div class="container">
 
-                <!--
-                text-center: centra horizontalmente el contenido de texto.
-                mb-4: agrega un margen inferior de nivel 4.
-                -->
                 <div class="text-center mb-4">
 
-                    <!--
-                    text-success: aplica el color verde de la paleta success al texto.
-                    fw-bold: aplica un peso de fuente equivalente a negrita.
-                    mb-2: agrega un margen inferior de nivel 2.
-                    -->
                     <p class="text-success fw-bold mb-2">
                         RECOMPENSAS PARA CLIENTES
                     </p>
 
-                    <!--
-                    fw-bold: aplica un peso de fuente equivalente a negrita.
-                    -->
                     <h2 class="fw-bold">
                         Programa LevelUp
                     </h2>
 
-                    <!--
-                    text-light: aplica el color claro de texto definido por Bootstrap.
-                    -->
                     <p class="text-light">
                         Compra productos, recomienda la tienda y obtén beneficios.
                     </p>
 
                 </div>
 
-                <!--
-                row: crea una fila de la cuadrícula y prepara gutters para sus columnas hijas.
-                g-4: agrega un gutter de nivel 4 entre las filas y columnas de la cuadrícula.
-                -->
                 <div class="row g-4">
 
-                    <!--
-                    col-12: ocupa las 12 columnas de la cuadrícula y, por lo tanto, todo el ancho de la fila.
-                    col-md-4: desde el breakpoint md, ocupa 4 de 12 columnas y permite tres elementos por fila.
-                    -->
                     <div class="col-12 col-md-4">
 
-                        <!--
-                        card: activa la estructura y los estilos base del componente tarjeta.
-                        bg-secondary: aplica el color de fondo secundario definido por Bootstrap.
-                        text-white: aplica color blanco al texto.
-                        h-100: asigna height: 100% para ocupar toda la altura disponible en el elemento padre.
-                        -->
                         <article class="card bg-secondary text-white h-100">
 
-                            <!--
-                            card-body: agrega el padding interno correspondiente al cuerpo de una tarjeta.
-                            -->
                             <div class="card-body">
 
-                                <!--
-                                card-title: aplica los márgenes preparados para el título de una tarjeta.
-                                h5: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h5.
-                                text-success: aplica el color verde de la paleta success al texto.
-                                -->
                                 <h3 class="card-title h5 text-success">
                                     Puntos LevelUp
                                 </h3>
 
-                                <!--
-                                card-text: aplica los márgenes preparados para un texto dentro de una tarjeta.
-                                -->
                                 <p class="card-text">
                                     Acumula puntos al realizar compras y utilízalos para obtener productos o descuentos.
                                 </p>
@@ -1424,37 +682,16 @@
 
                     </div>
 
-                    <!--
-                    col-12: ocupa las 12 columnas de la cuadrícula y, por lo tanto, todo el ancho de la fila.
-                    col-md-4: desde el breakpoint md, ocupa 4 de 12 columnas y permite tres elementos por fila.
-                    -->
                     <div class="col-12 col-md-4">
 
-                        <!--
-                        card: activa la estructura y los estilos base del componente tarjeta.
-                        bg-secondary: aplica el color de fondo secundario definido por Bootstrap.
-                        text-white: aplica color blanco al texto.
-                        h-100: asigna height: 100% para ocupar toda la altura disponible en el elemento padre.
-                        -->
                         <article class="card bg-secondary text-white h-100">
 
-                            <!--
-                            card-body: agrega el padding interno correspondiente al cuerpo de una tarjeta.
-                            -->
                             <div class="card-body">
 
-                                <!--
-                                card-title: aplica los márgenes preparados para el título de una tarjeta.
-                                h5: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h5.
-                                text-success: aplica el color verde de la paleta success al texto.
-                                -->
                                 <h3 class="card-title h5 text-success">
                                     Código de referido
                                 </h3>
 
-                                <!--
-                                card-text: aplica los márgenes preparados para un texto dentro de una tarjeta.
-                                -->
                                 <p class="card-text">
                                     Comparte tu código con otros jugadores y recibe puntos cuando se registren.
                                 </p>
@@ -1465,37 +702,16 @@
 
                     </div>
 
-                    <!--
-                    col-12: ocupa las 12 columnas de la cuadrícula y, por lo tanto, todo el ancho de la fila.
-                    col-md-4: desde el breakpoint md, ocupa 4 de 12 columnas y permite tres elementos por fila.
-                    -->
                     <div class="col-12 col-md-4">
 
-                        <!--
-                        card: activa la estructura y los estilos base del componente tarjeta.
-                        bg-secondary: aplica el color de fondo secundario definido por Bootstrap.
-                        text-white: aplica color blanco al texto.
-                        h-100: asigna height: 100% para ocupar toda la altura disponible en el elemento padre.
-                        -->
                         <article class="card bg-secondary text-white h-100">
 
-                            <!--
-                            card-body: agrega el padding interno correspondiente al cuerpo de una tarjeta.
-                            -->
                             <div class="card-body">
 
-                                <!--
-                                card-title: aplica los márgenes preparados para el título de una tarjeta.
-                                h5: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h5.
-                                text-success: aplica el color verde de la paleta success al texto.
-                                -->
                                 <h3 class="card-title h5 text-success">
                                     Niveles y beneficios
                                 </h3>
 
-                                <!--
-                                card-text: aplica los márgenes preparados para un texto dentro de una tarjeta.
-                                -->
                                 <p class="card-text">
                                     Sube de nivel con tus puntos y accede a nuevas recompensas para gamers.
                                 </p>
@@ -1512,129 +728,55 @@
 
         </section>
 
-        <!--
-        novedades-blog: crea un selector propio para personalizar esta sección desde css/styles.css.
-        bg-light: aplica el color de fondo claro definido por Bootstrap.
-        py-5: agrega padding vertical de nivel 5 arriba y abajo.
-        -->
         <section class="novedades-blog bg-light py-5">
 
-            <!--
-            container: centra el contenido, agrega padding horizontal y limita su ancho según el breakpoint.
-            -->
             <div class="container">
 
-                <!--
-                d-flex: establece display: flex para distribuir sus elementos mediante Flexbox.
-                justify-content-between: distribuye el espacio disponible entre el primer y el último elemento flexible.
-                align-items-center: centra verticalmente los elementos de la fila sobre el eje transversal de Flexbox.
-                mb-4: agrega un margen inferior de nivel 4.
-                -->
                 <div class="d-flex justify-content-between align-items-center mb-4">
 
-                    <!-- div crea un contenedor genérico; sin clases ni CSS no modifica por sí solo la presentación. -->
                     <div>
 
-                        <!--
-                        text-success: aplica el color verde de la paleta success al texto.
-                        fw-bold: aplica un peso de fuente equivalente a negrita.
-                        mb-2: agrega un margen inferior de nivel 2.
-                        -->
                         <p class="text-success fw-bold mb-2">
                             NOTICIAS Y CONSEJOS
                         </p>
 
-                        <!--
-                        fw-bold: aplica un peso de fuente equivalente a negrita.
-                        mb-0: elimina el margen inferior mediante margin-bottom: 0.
-                        -->
                         <h2 class="fw-bold mb-0">
                             Novedades del blog
                         </h2>
 
                     </div>
 
-                    <!--
-                    btn: activa los estilos base de botón de Bootstrap sobre el elemento.
-                    btn-outline-primary: aplica un botón transparente con borde y texto del color primary.
-                    href: utiliza la ruta relativa blog.html desde la ubicación de este archivo.
-                    -->
                     <a class="btn btn-outline-primary" href="blog.html">
                         Ver blog
                     </a>
 
                 </div>
 
-                <!--
-                row: crea una fila de la cuadrícula y prepara gutters para sus columnas hijas.
-                g-4: agrega un gutter de nivel 4 entre las filas y columnas de la cuadrícula.
-                -->
                 <div class="row g-4">
 
-                    <!--
-                    col-12: ocupa las 12 columnas de la cuadrícula y, por lo tanto, todo el ancho de la fila.
-                    col-md-6: desde el breakpoint md, ocupa 6 de 12 columnas y permite dos elementos por fila.
-                    -->
                     <div class="col-12 col-md-6">
 
-                        <!--
-                        card: activa la estructura y los estilos base del componente tarjeta.
-                        h-100: asigna height: 100% para ocupar toda la altura disponible en el elemento padre.
-                        shadow-sm: aplica una sombra exterior pequeña.
-                        -->
                         <article class="card h-100 shadow-sm">
 
-                            <!--
-                            imagen-blog: crea un selector propio para personalizar este espacio desde css/styles.css.
-                            p-5: agrega padding de nivel 5 en los cuatro lados.
-                            bg-secondary: aplica el color de fondo secundario definido por Bootstrap.
-                            text-white: aplica color blanco al texto.
-                            text-center: centra horizontalmente el contenido de texto.
-                            -->
                             <img
                                 class="card-img-top imagen-blog img-fluid"
                                 src="img/blog-computador.jpg"
                                 alt="imagen de componentes de computador gamer sobre un escritorio">
 
-                            <!--
-                            card-body: agrega el padding interno correspondiente al cuerpo de una tarjeta.
-                            d-flex: establece display: flex para distribuir sus elementos mediante Flexbox.
-                            flex-column: cambia el eje principal de Flexbox para ordenar los elementos verticalmente.
-                            -->
                             <div class="card-body d-flex flex-column">
 
-                                <!--
-                                text-success: aplica el color verde de la paleta success al texto.
-                                fw-bold: aplica un peso de fuente equivalente a negrita.
-                                small: reduce el tamaño de fuente al valor small definido por Bootstrap.
-                                mb-2: agrega un margen inferior de nivel 2.
-                                -->
                                 <p class="text-success fw-bold small mb-2">
                                     GUÍA PARA GAMERS
                                 </p>
 
-                                <!--
-                                card-title: aplica los márgenes preparados para el título de una tarjeta.
-                                h4: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h4.
-                                -->
                                 <h3 class="card-title h4">
                                     Cómo elegir tu primer computador gamer
                                 </h3>
 
-                                <!--
-                                card-text: aplica los márgenes preparados para un texto dentro de una tarjeta.
-                                text-secondary: aplica el color secundario al texto.
-                                -->
                                 <p class="card-text text-secondary">
                                     Conoce los componentes más importantes que debes considerar antes de comprar un computador gamer.
                                 </p>
 
-                                <!--
-                                btn: activa los estilos base de botón de Bootstrap sobre el elemento.
-                                btn-outline-primary: aplica un botón transparente con borde y texto del color primary.
-                                mt-auto: aplica margen superior automático y empuja el elemento hacia el final de una columna flexible.
-                                href: utiliza la ruta relativa detalle-blog1.html desde la ubicación de este archivo.
-                                -->
                                 <a class="btn btn-outline-primary mt-auto" href="detalle-blog1.html">
                                     Leer artículo
                                 </a>
@@ -1645,70 +787,29 @@
 
                     </div>
 
-                    <!--
-                    col-12: ocupa las 12 columnas de la cuadrícula y, por lo tanto, todo el ancho de la fila.
-                    col-md-6: desde el breakpoint md, ocupa 6 de 12 columnas y permite dos elementos por fila.
-                    -->
                     <div class="col-12 col-md-6">
 
-                        <!--
-                        card: activa la estructura y los estilos base del componente tarjeta.
-                        h-100: asigna height: 100% para ocupar toda la altura disponible en el elemento padre.
-                        shadow-sm: aplica una sombra exterior pequeña.
-                        -->
                         <article class="card h-100 shadow-sm">
 
-                            <!--
-                            imagen-blog: crea un selector propio para personalizar este espacio desde css/styles.css.
-                            p-5: agrega padding de nivel 5 en los cuatro lados.
-                            bg-secondary: aplica el color de fondo secundario definido por Bootstrap.
-                            text-white: aplica color blanco al texto.
-                            text-center: centra horizontalmente el contenido de texto.
-                            -->
                             <img
                                 class="card-img-top imagen-blog img-fluid"
                                 src="img/blog-espacio-gamer.jpg"
                                 alt="imagen de un setup gamer con distintos elementos para espacio gamer">
 
-                            <!--
-                            card-body: agrega el padding interno correspondiente al cuerpo de una tarjeta.
-                            d-flex: establece display: flex para distribuir sus elementos mediante Flexbox.
-                            flex-column: cambia el eje principal de Flexbox para ordenar los elementos verticalmente.
-                            -->
                             <div class="card-body d-flex flex-column">
 
-                                <!--
-                                text-success: aplica el color verde de la paleta success al texto.
-                                fw-bold: aplica un peso de fuente equivalente a negrita.
-                                small: reduce el tamaño de fuente al valor small definido por Bootstrap.
-                                mb-2: agrega un margen inferior de nivel 2.
-                                -->
                                 <p class="text-success fw-bold small mb-2">
                                     CONSEJOS
                                 </p>
 
-                                <!--
-                                card-title: aplica los márgenes preparados para el título de una tarjeta.
-                                h4: reutiliza el tamaño y el peso tipográfico que Bootstrap asigna a un encabezado h4.
-                                -->
                                 <h3 class="card-title h4">
                                     Consejos para mejorar tu espacio de juego
                                 </h3>
 
-                                <!--
-                                card-text: aplica los márgenes preparados para un texto dentro de una tarjeta.
-                                text-secondary: aplica el color secundario al texto.
-                                -->
                                 <p class="card-text text-secondary">
                                     Descubre cómo organizar tu escritorio y mejorar la comodidad durante tus sesiones de juego.
                                 </p>
 
-                                <!--
-                                btn: activa los estilos base de botón de Bootstrap sobre el elemento.
-                                btn-outline-primary: aplica un botón transparente con borde y texto del color primary.
-                                mt-auto: aplica margen superior automático y empuja el elemento hacia el final de una columna flexible.
-                                href: utiliza la ruta relativa detalle-blog2.html desde la ubicación de este archivo.
-                                -->
                                 <a class="btn btn-outline-primary mt-auto" href="detalle-blog2.html">
                                     Leer artículo
                                 </a>
@@ -1727,65 +828,30 @@
 
     </main>
 
-    <!--
-    bg-dark: aplica el color de fondo oscuro definido por Bootstrap.
-    text-white: aplica color blanco a todo el texto contenido en el footer.
-    py-4: agrega padding de nivel 4 arriba y abajo.
-    -->
     <footer class="bg-dark text-white py-4">
 
-        <!--
-        container: centra el contenido, agrega padding horizontal y limita su ancho según el breakpoint.
-        -->
         <div class="container">
 
-            <!--
-            row: crea una fila del sistema de cuadrícula de Bootstrap.
-            g-3: agrega una separación de nivel 3 entre las columnas.
-            -->
             <div class="row g-3">
 
-                <!--
-                col-12: ocupa las 12 columnas y todo el ancho disponible en pantallas pequeñas.
-                col-md-6: desde el breakpoint md ocupa 6 de 12 columnas y utiliza la mitad de la fila.
-                -->
                 <div class="col-12 col-md-6">
 
-                    <!--
-                    h5: aplica al elemento el tamaño y peso tipográfico de un encabezado h5.
-                    -->
                     <h2 class="h5">
                         LEVEL-UP GAMER
                     </h2>
 
-                    <!--
-                    mb-0: elimina el margen inferior predeterminado del párrafo.
-                    text-light: aplica el color claro de texto definido por Bootstrap.
-                    -->
                     <p class="mb-0 text-light">
                         Tienda online de productos y accesorios para gamers en Chile.
                     </p>
 
                 </div>
 
-                <!--
-                col-12: ocupa las 12 columnas y todo el ancho disponible en pantallas pequeñas.
-                col-md-6: desde el breakpoint md ocupa 6 de 12 columnas y utiliza la mitad de la fila.
-                text-md-end: desde el breakpoint md alinea el texto hacia el extremo derecho.
-                -->
                 <div class="col-12 col-md-6 text-md-end">
 
-                    <!--
-                    mb-1: agrega un margen inferior pequeño de nivel 1.
-                    -->
                     <p class="mb-1">
                         Contacto
                     </p>
 
-                    <!--
-                    text-light: aplica el color claro de Bootstrap al enlace.
-                    href="mailto:": solicita al dispositivo abrir una aplicación de correo.
-                    -->
                     <a class="text-light" href="mailto:contacto@levelupgamer.cl">
                         contacto@levelupgamer.cl
                     </a>
@@ -1794,16 +860,8 @@
 
             </div>
 
-            <!--
-            La etiqueta hr crea una separación temática horizontal.
-            -->
             <hr>
 
-            <!--
-            text-center: centra horizontalmente el texto.
-            mb-0: elimina el margen inferior predeterminado.
-            small: reduce el tamaño de fuente.
-            -->
             <p class="text-center mb-0 small">
                 © 2026 Level-Up Gamer. Todos los derechos reservados.
             </p>
@@ -1812,7 +870,6 @@
 
     </footer>
 
-    <!-- bootstrap.bundle incluye el JavaScript de Bootstrap y Popper para activar componentes como la navbar desplegable. -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
